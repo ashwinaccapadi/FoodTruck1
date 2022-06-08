@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    android:background="@color/employeeColor">
+
+
+<TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="30dip"
+        android:text="@string/label_name" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/label_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/label_name"
+        android:orientation="horizontal"
+        android:padding="30dip" />
+
+    <TextView
+        android:id="@+id/label_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="30dip"
+        android:text="@string/label_price" />
+
+    <EditText
+        android:id="@+id/input_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/label_price"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@id/label_price"
+        android:orientation="horizontal"
+        android:padding="30dip" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+    <Button
+        android:id = "@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick = "insert"
+        android:layout_below="@id/spinner1"
+        android:text = "@string/add"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding = "30dip" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="goBack"
+        android:padding="30dip"
+        android:text="@string/back" />
+
+
+</RelativeLayout>
